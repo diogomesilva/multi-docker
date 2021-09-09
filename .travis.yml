@@ -1,6 +1,8 @@
 sudo: required
- services:
-    - docker
+language: generic
+
+services:
+  - docker
 
 before_install:
   - docker build -t diogomesilva/react-test -f ./client/Dockerfile.dev ./client
